@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARDÁPIO</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+    <div class="banner">
+        <img class="c" src="img/c1.jpg" alt="">
+        <img class="c" src="img/c2.jpg" alt="">
+        <img class="c" src="img/c3.jpg" alt="">
+        <img class="c" src="img/c4.jpg" alt="">
+        <img class="c" src="img/c5.jpg" alt="">
+        <img class="c" src="img/c6.jpg" alt="">
+        <img class="c" src="img/c7.jpg" alt="">
+        <img class="c" src="img/c8.jpg" alt="">
+        <img class="c" src="img/c9.jpg" alt="">
+    </div>
+
+    <h1 style="text-align: center;">
+    Menu - Faça A Sua Escolha
+    </h1>
+
+    <div class="principalText">
+        
+        <h2>Prato Principal</h2>
+        <h3>Todos os pratos acompanham Arroz, Feijão e a sobremesa do dia.</h3>
+
+        <div class="principal">
+
+           <div class="prato-principal1">
+               <img class="img-principais" src="img/c1.jpg" alt="">
+               <h2>Feijoada Completa</h2>
+               <h1 style="color:rgb(8, 133, 91)">R$ 33,00</h1>
+               <div class="quantity buttons_added">
+                <input type="button" value="-" class="minus">
+                <input type="number" step="1" min="0" max="" id="1" name="quantity" value="0" title="Qty"
+                    class="input-text qty text" size="4" pattern="" inputmode="">
+                <input type="button" value="+" class="plus">
+            </div>
+        </div> 
+
+           <div class="prato-principal2">
+               <img class="img-principais" src="img/c2.jpg" alt="">
+               <h2>Tapioca Doce</h2>
+               <h1 style="color:rgb(8, 133, 91)">R$ 16,00</h1>
+               <div class="quantity buttons_added">
+                <input type="button" value="-" class="minus">
+                <input type="number" step="1" min="0" max="" id="2" name="quantity" value="0" title="Qty"
+                    class="input-text qty text" size="4" pattern="" inputmode="">
+                <input type="button" value="+" class="plus">
+            </div>
+            </div> 
+
+           <div class="prato-principal3">
+               <img class="img-principais" src="img/c3.jpg" alt="">
+               <h2>Coxinha da casa</h2>
+               <h1 style="color:rgb(8, 133, 91)">R$ 26,00</h1>
+               <div class="quantity buttons_added">
+                <input type="button" value="-" class="minus">
+                <input type="number" step="1" min="0" max="" id="3" name="quantity" value="0" title="Qty"
+                    class="input-text qty text" size="4" pattern="" inputmode="">
+                <input type="button" value="+" class="plus">
+            </div>
+            </div> 
+
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="principalText">
+        
+        <h2>Acompanhamentos</h2>
+        <h3>Porções para uma pessoa</h3>
+
+        <div class="principal">
+
+           <div class="prato-acomp1">
+               <img class="img-principais" src="img/c4.jpg" alt="">
+               <h2>Massa ao molho</h2>
+               <h1 style="color:rgb(8, 133, 91)">R$ 10,00</h1>
+               <div class="quantity buttons_added">
+                <input type="button" value="-" class="minus">
+                <input type="number" step="1" min="0" max="" id="4" name="quantity" value="0" title="Qty"
+                    class="input-text qty text" size="4" pattern="" inputmode="">
+                <input type="button" value="+" class="plus">
+            </div>
+            </div> 
+
+           <div class="prato-acomp2">
+               <img class="img-principais" src="img/c5.jpg" alt="">
+               <h2>Mini-Hamburguer</h2>
+               <h1 style="color:rgb(8, 133, 91)">R$ 13,00</h1>
+               <div class="quantity buttons_added">
+                <input type="button" value="-" class="minus">
+                <input type="number" step="1" min="0" max="" id="5" name="quantity" value="0" title="Qty"
+                    class="input-text qty text" size="4" pattern="" inputmode="">
+                <input type="button" value="+" class="plus">
+            </div>
+            </div> 
+
+           <div class="prato-acomp3">
+               <img class="img-principais" src="img/c6.jpg" alt="">
+               <h2>Panqueca</h2>
+               <h1 style="color:rgb(8, 133, 91)">R$ 12,00</h1>
+               <div class="quantity buttons_added">
+                <input type="button" value="-" class="minus">
+                <input type="number" step="1" min="0" max="" id="6" name="quantity" value="0" title="Qty"
+                    class="input-text qty text" size="4" pattern="" inputmode="">
+                <input type="button" value="+" class="plus">
+            </div>
+            </div> 
+           
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="Dados-pessoais">
+
+        <h2>Dados Pessoais</h2>
+        <input type="text" id="Cliente" placeholder="Digite o seu nome">
+        <br><br>
+        <input type="tel" id="phone" placeholder="Digite o seu telefone">
+        <br><br>
+        <input type="email" id="email" name="" id="" placeholder="Digite o seu email">
+
+    </div>
+
+    <br>
+
+    <footer>
+        
+        <button type="submit" id="calculate" onclick="start()">Calcular</button>
+        <div id="saida">
+        </div>
+    </footer>
+
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#phone").mask("(99) 99999-9999");
+    });
+</script>
+
+<script src="jquery-3.6.0.min.js"> </script>
+<script src="script.js"> </script>
+<script src="quantity.js"> </script>
+<script src="jquery.mask.min.js"></script>
+
+</body>
+</html>

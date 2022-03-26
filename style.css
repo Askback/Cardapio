@@ -1,0 +1,200 @@
+body{
+    background-color: gray;
+}
+
+h2{
+    font-weight: bolder;
+}
+
+.container{
+    display: flexbox;
+    box-shadow: 10px 5px 5px black;
+    background-color: white;
+    max-width:1000px ;
+    padding: 2em;
+    margin: auto;
+}
+
+.banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.c{
+    max-width: 100px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.principalText{
+    display: flex;
+    box-shadow: 5px 5px 5px 5px rgb(61, 57, 57);
+    background-color: wheat;
+    flex-direction: column;
+    padding: 2em;
+    margin: auto;   
+    text-align: center;
+    justify-content: center;
+}
+
+.principal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.prato-principal1{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 3px 3px rgb(61, 57, 57);
+    margin: 2em;
+    width: 250px;
+    background-color: white;
+}
+
+.prato-principal2{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 3px 3px rgb(61, 57, 57);
+    margin: 2em;
+    width: 250px;
+    background-color: white;
+}
+
+.prato-principal3{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 3px 3px rgb(61, 57, 57);
+    margin: 2em;
+    width: 250px;
+    background-color: white;
+}
+
+
+.img-principais{
+    height: 320px;
+    padding: 0.5em;
+    object-fit: cover ;
+}
+
+.prato-acomp1{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 3px 3px rgb(61, 57, 57);
+    margin: 2em;
+    width: 250px;
+    background-color: white;
+}
+
+.prato-acomp2{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 3px 3px rgb(61, 57, 57);
+    margin: 2em;
+    width: 250px;
+    background-color: white;
+}
+
+.prato-acomp3{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 3px 3px rgb(61, 57, 57);
+    margin: 2em;
+    width: 250px;
+    background-color: white;
+}
+
+.Dados-pessoais{    
+    display: flex;
+    box-shadow: 5px 5px 5px 5px rgb(61, 57, 57);
+    background-color: wheat;
+    flex-direction: column;
+    padding: 2em; 
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    width: 600px;
+    height: 30px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+
+button{
+    background-color: rgb(11, 115, 184);
+    color: white;
+    cursor: pointer;
+    width: 1000px;
+    height: 50px;
+}
+
+.quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    
+}
+
+.quantity .input-text.qty {
+    width: 35px;
+    height: 39px;
+    padding: 0 5px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #efefef;
+}
+
+.quantity.buttons_added {
+    text-align: left;
+    position: relative;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+.quantity.buttons_added input {
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    box-shadow: none;
+}
+
+.quantity.buttons_added .minus,
+.quantity.buttons_added .plus {
+    padding: 7px 10px 8px;
+    height: 41px;
+    background-color: #ffffff;
+    border: 1px solid #efefef;
+    cursor: pointer;
+}
+
+.quantity.buttons_added .minus {
+    border-right: 0;
+}
+
+.quantity.buttons_added .plus {
+    border-left: 0;
+}
+
+.quantity.buttons_added .minus:hover,
+.quantity.buttons_added .plus:hover {
+    background: #eeeeee;
+}
+
+.quantity input::-webkit-outer-spin-button,
+.quantity input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0;
+}
+
+.quantity.buttons_added .minus:focus,
+.quantity.buttons_added .plus:focus {
+    outline: none;
+}
